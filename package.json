@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/arjunmahishi/vanilla-pwa/issues"
   },
-  "homepage": "https://github.com/arjunmahishi/vanilla-pwa#readme"
+  "homepage": "https://github.com/arjunmahishi/vanilla-pwa#readme",
+  "bin": {
+    "vanilla-pwa": "./index.js"
+  }
 }
