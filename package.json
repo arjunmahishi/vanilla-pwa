@@ -1,0 +1,24 @@
+{
+  "name": "vanilla-pwa",
+  "version": "1.0.0",
+  "description": "A simple package to generate all the necessary files and code for a progressive web app. The generated code is completely vanilla.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arjunmahishi/vanilla-pwa.git"
+  },
+  "keywords": [
+    "javascript",
+    "pwa",
+    "vanilla"
+  ],
+  "author": "Arjun Mahishi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/arjunmahishi/vanilla-pwa/issues"
+  },
+  "homepage": "https://github.com/arjunmahishi/vanilla-pwa#readme"
+}
