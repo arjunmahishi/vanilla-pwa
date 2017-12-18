@@ -5,3 +5,8 @@ A simple package to generate all the necessary files and code for a progressive 
 ```bash 
 npm install -g vanilla-pwa
 ```
+
+### Usage
+```bash
+vanilla-pwa <app-name>
+```
