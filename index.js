@@ -1,6 +1,7 @@
 #! /usr/bin/env node
 
 const exec = require('child_process').exec;
+const path = require('path');
 
 var run = command => {
 	exec(command, (error, stdout, stderr) => {
@@ -15,5 +16,7 @@ var run = command => {
 
 if(process.argv.length > 2){
 	run(`mkdir ${process.argv[2]}`);
-	run(`cp -r skeleton/* ${process.argv[2]}`);
+	run(`cp -r ${path.resolve(__dirname, 'skeleton/*')} ${process.argv[2]}`);
+}else{
+
 }
