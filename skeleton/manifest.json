@@ -1,0 +1,36 @@
+{
+  "name": "my-new-pwa",
+  "short_name": "my-new-pwa",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#fff",
+  "theme_color": "#000",
+  "icons": [
+    {
+      "src": "/assets/icons/icon.png",
+      "type": "image/png",
+      "sizes": "48x48"
+    },
+    {
+      "src": "/assets/icons/icon.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    },
+    {
+      "src":"/assets/icons/icon.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/icons/icon.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/assets/icons/icon.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}

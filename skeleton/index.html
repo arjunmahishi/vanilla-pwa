@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My New PWA</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#000" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/icons/icon.png">
+    <link rel="icon" type="image/png" href="/assets/icons/icon.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/assets/icons/icon.png" sizes="16x16">
+    <link rel="manifest" href="./manifest.json">
+
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+
+</head>
+
+<body></body>
+
+<script src="js/main.js"></script>
+
+<script type="text/javascript">
+    if('serviceWorker' in navigator) {
+        navigator.serviceWorker
+            .register( window.location.href + 'service-worker.js')
+            .then(function() { 
+                console.log("Service Worker Registered"); 
+        });
+    }
+</script>
+
+</html>
