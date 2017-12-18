@@ -13,4 +13,7 @@ var run = command => {
 	});
 } 
 
-run("ls");
+if(process.argv.length > 2){
+	run(`mkdir ${process.argv[2]}`);
+	run(`cp -r skeleton/* ${process.argv[2]}`);
+}
