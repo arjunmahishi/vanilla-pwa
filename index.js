@@ -1,3 +1,16 @@
 #! /usr/bin/env node
 
-console.log("This is my first node module. Thank you for installing it. \nI will shortly upload this with real code.");
+const exec = require('child_process').exec;
+
+var run = command => {
+	exec(command, (error, stdout, stderr) => {
+	    if (error !== null) {
+	        console.log(`exec error: ${error}`);
+	    }else {
+	    	console.log(`${stdout}`);
+		    console.log(`${stderr}`);
+	    }
+	});
+} 
+
+run("ls");
