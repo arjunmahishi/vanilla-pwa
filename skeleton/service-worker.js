@@ -1,6 +1,16 @@
 let version = 1.0;
 
+const filesToCache = [
+	"/",
+	"/index.html",
+	"js/main.js",
+	"css/main.js"
+];
+
 self.addEventListener("install", function(event) {
+	event.waitUntil(caches.open("vanillaV" + version).then((cache) =>{
+		return cache.addAll(filesToCache);
+	}));
     console.log("service worker installed...")
 });
 
